@@ -16,80 +16,108 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>Checkout Page - Devchallenges</title>
+    
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+  <main>  
+    <h1>Checkout</h1>
+    <section>
+      <div class="contact-info">
+        <p>Contact information</p>
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input name="email" type="email" id="email" placeholder="Enter your email...">        
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone...">        
+        </div>
+        <p>Shipping address</p>
+        <div class="form-control">
+          <label for="full-name">Full name</label>
+          <input name="full-name" type="text" id="full-name" placeholder="Rodney Cotton">  
+        </div>
+        <div class="form-control">
+          <label for="address">Address</label>
+          <input name="address" type="text" id="address" placeholder="Your address...">  
+        </div>
+        <div class="form-control">
+          <label for="city">City</label>
+          <input name="city" type="text" id="city" placeholder="Your city...">  
+        </div>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+        <div class="form-control-grid">
+
+          <div class="form-control">
+            <label for="country">Country</label>
+            <input id="country" type="text" placeholder="Australia">           
+            <span class="material-icons">keyboard_arrow_down</span>
+          </div>
+          <div class="form-control">
+            <label for="postal-code">Postal code</label>
+            <input id="postal-code" type="text" placeholder="Australia">           
+            <span class="material-icons">keyboard_arrow_down</span>
+          </div>
+          
+            
+          
+        </div>
+
+        <div class="form-control checkbox">
+          <input type="checkbox" name="remember" id="remember">
+          <span>Save this information for next time</span>
+        </div>
+
+        <button>Continue</button>
+        
+
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+      <div class="checkout">
+        <article>
+          <img src="photo1.png" alt="">
+          <div class="product-info">            
+            <div class="product-info-inner">
+              <div>Vintage Backbag</div>
+              <span class="orange">$54.99</span>
+              <span class="deleted">$94.99</span>
+            </div>
+            <div class="quantity-container">
+              <div class="btn">-</div>
+              <span>1</span>
+              <div class="btn">+</div>
+            </div>
+          </div>          
+        </article>
+
+        <article>
+          <img src="photo2.png" alt="">
+          <div class="product-info">
+            <div class="product-info-inner">
+              <div>Levi Shoes</div>
+              <span class="orange">$74.99</span>
+              <span class="deleted">$124.99</span>
+            </div>            
+            <div class="quantity-container">
+              <div class="btn">-</div>
+              <span>1</span>
+              <div class="btn">+</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="shipping">
+          <div>Shipping <span>$19</span></div>
+          <div>Total <span>$148.98</span></div>
+        </article>
+      
+      </div>
+    </section>
+  </main>   
   </body>
 </html>
