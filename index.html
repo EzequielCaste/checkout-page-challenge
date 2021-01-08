@@ -27,41 +27,49 @@
   <main>  
     <h1>Checkout</h1>
     <section>
+      <form class="my-form" onsubmit="alert('Form submitted correctly!');">
       <div class="contact-info">
         <p>Contact information</p>
         <div class="form-control">
           <label for="email">E-mail</label>
-          <input name="email" type="email" id="email" placeholder="Enter your email...">        
+          <input name="email" type="email" id="email" placeholder="Enter your email..." required>        
         </div>
         <div class="form-control">
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone...">        
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone..." required>        
         </div>
         <p>Shipping address</p>
         <div class="form-control">
           <label for="full-name">Full name</label>
-          <input name="full-name" type="text" id="full-name" placeholder="Rodney Cotton">  
+          <input name="full-name" type="text" id="full-name" placeholder="Rodney Cotton" required>  
         </div>
         <div class="form-control">
           <label for="address">Address</label>
-          <input name="address" type="text" id="address" placeholder="Your address...">  
+          <input name="address" type="text" id="address" placeholder="Your address..." required>  
         </div>
         <div class="form-control">
           <label for="city">City</label>
-          <input name="city" type="text" id="city" placeholder="Your city...">  
+          <input name="city" type="text" id="city" placeholder="Your city..." required>  
         </div>
 
         <div class="form-control-grid">
 
           <div class="form-control">
             <label for="country">Country</label>
-            <input id="country" type="text" placeholder="Australia">           
+            <input id="country" type="text" placeholder="Your country..." required>           
             <span class="material-icons">keyboard_arrow_down</span>
+            <div class="country-list">
+              <ul>
+                <li>Australia</li>
+                <li>Argentina</li>
+                <li>Chile</li>
+                <li>Brazil</li>
+              </ul>
+            </div>
           </div>
           <div class="form-control">
             <label for="postal-code">Postal code</label>
-            <input id="postal-code" type="text" placeholder="Australia">           
-            <span class="material-icons">keyboard_arrow_down</span>
+            <input id="postal-code" type="text" placeholder="Your postal code..." required>          
           </div>
           
             
@@ -74,7 +82,7 @@
         </div>
 
         <button>Continue</button>
-        
+        </form>
 
       </div>
 
@@ -88,9 +96,9 @@
               <span class="deleted">$94.99</span>
             </div>
             <div class="quantity-container">
-              <div class="btn">-</div>
-              <span>1</span>
-              <div class="btn">+</div>
+              <div class="btn" id="0">-</div>
+                <p>1</p>
+              <div class="btn" id="0">+</div>
             </div>
           </div>          
         </article>
@@ -104,9 +112,9 @@
               <span class="deleted">$124.99</span>
             </div>            
             <div class="quantity-container">
-              <div class="btn">-</div>
-              <span>1</span>
-              <div class="btn">+</div>
+              <div class="btn" id="1">-</div>
+              <p>1</p>
+              <div class="btn" id="1">+</div>
             </div>
           </div>
         </article>
@@ -117,11 +125,13 @@
         </article>
       
       </div>
+      
     </section>
     <footer>      
       <p><a href="https://portfolio.devchallenges.io/EzequielCaste">@EzequielCaste</a>
     </p>
     </footer>
-  </main>   
+  </main>
+  <script src="main.js"></script>   
   </body>
 </html>
