@@ -62,22 +62,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - [x] User story: When I click submit button or press enter, I can see a warning if validation fails
 - [x] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 
-
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
-
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
